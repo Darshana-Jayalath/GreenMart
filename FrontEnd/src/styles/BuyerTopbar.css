@@ -1,0 +1,293 @@
+/* ====== Topbar ====== */
+.buyer-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5CE65C;
+  padding: 12px 24px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ====== Left Section (Search) ====== */
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-bar-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f1f3f6;
+  padding: 5px 10px;
+  border-radius: 25px;
+  width: 400px;
+}
+
+.search-bar-container input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 25px;
+  background: transparent;
+  font-size: 14px;
+}
+
+.search-icon {
+  margin-right: 8px;
+  color: #888;
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 36px;
+  cursor: pointer;
+  color: #555;
+  font-size: 14px;
+}
+
+.search-btn {
+  background: #10b981;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  right: 2px;
+}
+
+.search-btn:hover {
+  background: #059669;
+}
+
+/* ====== Search Results ====== */
+.search-results {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 50;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  cursor: pointer;
+  gap: 10px;
+  transition: background 0.2s;
+}
+
+.search-result-item:hover {
+  background-color: #f1f1f1;
+}
+
+.search-result-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* ====== Search Bar Focus ====== */
+.search-bar-container:focus-within {
+  border: 1px solid #10b981; /* Green border on focus */
+  background: #fff; /* Optional: white background on focus */
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3); /* Subtle green glow */
+}
+
+.search-bar-container:focus-within .search-icon {
+  color: #10b981; /* Icon turns green on focus */
+}
+
+
+.result-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-weight: 500;
+  color: #222;
+}
+
+.product-price {
+  font-size: 13px;
+  color: #10b981;
+}
+
+.add-cart-btn {
+  background: #10b981;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.add-cart-btn:hover {
+  background: #059669;
+}
+
+/* ====== Right Section ====== */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fdfdfd;
+  position: relative;
+}
+
+.icon-btn.has-notify .notify-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #ef4444;
+  color: white;
+  border-radius: 50%;
+  font-size: 11px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  width: 280px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 10px;
+  z-index: 50;
+}
+
+.notification-dropdown h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #10b981;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4px;
+}
+
+.notification-section {
+  margin-top: 8px;
+}
+
+.notification-section h5 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #14532d;
+  margin-bottom: 4px;
+}
+
+.notification-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-dropdown li {
+  font-size: 13px;
+  color: #222;
+  padding: 6px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.notify-time {
+  font-size: 11px;
+  color: #888;
+}
+
+/* ====== Logout Modal ====== */
+.logout-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.logout-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: black;
+  width: 280px;
+}
+
+.logout-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.confirm-btn {
+  background: #16b450;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #16b450;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background: #16b450;
+}
+
+.cancel-btn:hover {
+  background: #15803d;
+}
+
+.buyer-name {
+  font-weight: 500;
+  color: #333;
+}

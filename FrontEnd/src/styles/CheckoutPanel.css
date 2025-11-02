@@ -1,0 +1,14 @@
+/* src/styles/CheckoutPanel.css */
+.checkout-panel { background:#fff; padding:18px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+.checkout-panel h3 { margin:0 0 12px 0; }
+.checkout-grid { display:grid; grid-template-columns: repeat(2, 1fr); gap:10px; margin-bottom:14px; }
+.checkout-grid input, .checkout-grid select { padding:10px; border-radius:8px; border:1px solid #e6e6e6; }
+.checkout-summary { display:flex; gap:18px; align-items:flex-start; justify-content:space-between; }
+.row { display:flex; justify-content:space-between; padding:6px 0; color:#444; }
+.total { font-size:1.05rem; border-top:1px solid #eee; padding-top:10px; margin-top:8px; }
+.payment-block { min-width:260px; display:flex; flex-direction:column; gap:10px; }
+.payment-block select { padding:8px; border-radius:8px; border:1px solid #ddd; }
+.btn-row { display:flex; gap:8px; }
+.place { background:#0b8f3a; color:#fff; border:none; padding:10px 14px; border-radius:8px; cursor:pointer; }
+.cancel { background:#fff; color:#333; border:1px solid #ddd; padding:10px 14px; border-radius:8px; cursor:pointer; }
+.error { color:#ff4d4f; margin-top:6px; }

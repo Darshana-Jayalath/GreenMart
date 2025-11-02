@@ -1,0 +1,105 @@
+.buyer-settings-wrapper {
+  max-width: 480px; /* close to sidebar */
+  margin: 20px 0 20px 20px; /* left margin to align near sidebar */
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.status-message {
+  text-align: left;
+  margin-bottom: 15px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.status-message.error {
+  background-color: #fdecea;
+  color: #e53935;
+  border: 1px solid #f5c6cb;
+}
+
+.status-message.success {
+  background-color: #e6f4ea;
+  color: #388e3c;
+  border: 1px solid #c3e6cb;
+}
+
+.update-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.update-form label {
+  font-weight: 600;
+  color: #555;
+  text-align: left;
+}
+
+.update-form input {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  width: 100%; /* all textboxes same width */
+  box-sizing: border-box;
+}
+
+.update-form input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.25);
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input .eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.update-btn {
+  width: fit-content;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: all 0.2s;
+}
+
+.update-btn:hover {
+  background-color: #43a047;
+}
+
+.update-btn:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+/* Make everything aligned to left */
+.update-form, .update-form label, .update-form input, .update-form button {
+  text-align: left;
+}

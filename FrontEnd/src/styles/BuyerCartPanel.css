@@ -1,0 +1,237 @@
+/* src/styles/BuyerCartPanel.css */
+.buyer-cart-panel {
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.buyer-cart-panel h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.2rem;
+}
+
+.empty {
+  color: #666;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.cart-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.cart-img-wrap {
+  width: 84px;
+  height: 64px;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-img {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.cart-info {
+  flex: 1;
+}
+
+.cart-info h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.cat {
+  margin: 4px 0;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.qty-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.qty-row input {
+  width: 64px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.price {
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.cart-actions {
+  display: flex;
+  align-items: center;
+}
+
+.remove {
+  background: none;
+  border: none;
+  color: #ff4d4f;
+  cursor: pointer;
+}
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-top: 8px;
+  border-top: 1px solid #eee;
+}
+
+.checkout-btn {
+  background: #0b8f3a;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(11,143,58,0.18);
+}
+
+.cart-summary {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-weight: 600;
+}
+
+.sum {
+  font-size: 1.05rem;
+  color: #333;
+}
+
+/* ------------------------ Address Form Styles ------------------------ */
+.cart-address-form {
+  margin-top: 20px;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: #f9f9f9;
+  position: relative;
+}
+
+.cart-address-form h4 {
+  margin: 0 0 12px 0;
+  font-size: 1.1rem;
+  color: #2563eb;
+  display: inline-block;
+}
+
+.address-actions {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.edit-address-btn {
+  background: #fbbf24;
+  color: #fff;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.edit-address-btn:hover {
+  background: #f59e0b;
+}
+
+.delete-address-btn {
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.delete-address-btn:hover {
+  background: #c41c1c;
+}
+
+.address-form-fields {
+  margin-top: 12px;
+}
+
+.address-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.address-row input,
+.address-row select {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+.address-row select {
+  cursor: pointer;
+  background: #fff;
+}
+
+.save-address-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.save-address-btn:hover {
+  background: #1e40af;
+}
+
+/* Disabled input styling when not editing */
+.address-form-fields.view input,
+.address-form-fields.view select {
+  background: #f3f4f6;
+  border-color: #ddd;
+  cursor: not-allowed;
+}

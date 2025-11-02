@@ -1,0 +1,151 @@
+.buyer-orders {
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.buyer-orders h3 {
+  margin: 0 0 12px 0;
+}
+
+.message {
+  padding: 8px 10px;
+  background: #e6f7ff;
+  color: #004085;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.loading {
+  color: #555;
+}
+
+.orders-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-card {
+  border-radius: 10px;
+  padding: 12px;
+  background: #fafafa;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.order-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.muted {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.status {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+.status.confirmed {
+  background: #e6ffed;
+  color: #0b8f3a;
+  border: 1px solid #c9f7d6;
+}
+
+.status.rejected {
+  background: #ffe6e6;
+  color: #b30000;
+  border: 1px solid #ffcccc;
+}
+
+.order-address {
+  margin-bottom: 8px;
+}
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.item-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.item-img {
+  width: 64px;
+  height: 48px;
+  background: #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-price {
+  font-weight: 700;
+}
+
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totals {
+  text-align: right;
+}
+
+.grand {
+  font-weight: 800;
+  margin-top: 6px;
+}
+
+.cancel-btn {
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background: #e60000;
+}
